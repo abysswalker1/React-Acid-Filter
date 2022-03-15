@@ -1,0 +1,16 @@
+.droper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.droper__dropzone {
+    height : 220px;
+    width : 220px;
+    padding : 20px;
+    border: 3px dotted #212121;
+    position : relative;
+    font-size: 24px;
+    text-align: center;
+}
+

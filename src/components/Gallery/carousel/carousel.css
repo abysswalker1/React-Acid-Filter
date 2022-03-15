@@ -1,0 +1,27 @@
+.carousel-container {
+    height : 300px;
+    display: flex;
+    align-items: center;
+    font-size : 24px;
+}
+
+.carousel-window {
+    height : 100%;
+    overflow : hidden;
+    position: relative;
+}
+
+.carousel-window-counter {
+    position: absolute;
+    top : -5px;
+    left : 0;
+    user-select : none;
+}
+
+.carousel-window-items {
+    width : 100%;
+    height : 100%;
+    display: flex;
+    align-items : center;
+    transition : 0.3s;
+}

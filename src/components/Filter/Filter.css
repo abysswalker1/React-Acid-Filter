@@ -1,0 +1,44 @@
+.filter__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+}
+
+.filter__image-wrapper {
+    display: flex;
+    align-items: flex-start;
+    position : relative;
+    isolation: isolate;
+}
+
+.fiiter__delete {
+    margin-left: 5px;
+}
+
+.lay {
+    position : absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    vertical-align: top;
+}
+
+img {
+    max-width: 350px;
+    max-height: 300px;
+    object-fit: contain;
+    vertical-align: top;
+}
+
+.filter__tools {
+    display: flex;
+    margin : 0 30px;
+}
+
+.filter__tools-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+}
