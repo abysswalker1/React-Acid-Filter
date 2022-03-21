@@ -19,6 +19,9 @@ export default function Filter() {
     domtoimage.toPng(finalPicture).then((url) => {
       updateImgList(url);
     });
+    function boyNextDoor () {
+      console.log(this)
+    }
   };
 
   const changeFilterStyle = (style) => {
