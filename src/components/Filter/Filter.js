@@ -29,20 +29,7 @@ export default function Filter() {
     reference.current.style.backgroundColor = color;
   };
 
-  const waitingForImage = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const img = document.getElementsByTagName('IMG')[0];
-      resolve(img);
-    }, 100);
-  });
-
   useEffect(() => {
-    waitingForImage.then((img) => {
-      if (img) {
-        reference.current.style.width = img.width + 'px';
-        reference.current.style.height = img.height + 'px';
-      }
-    });
     finalPicture = document.querySelector('.filter__image');
   });
 
@@ -51,10 +38,9 @@ export default function Filter() {
   return (
     <div className="filter">
       <div className="filter__container">
-        <div className="filter__image-wrapper">
-          <div className="filter__image">
-            <img className="filter__image-picture" src={image.src} style={style} />
-            <div ref={reference} className="lay"></div>
+        <div className="filter__wrapper">
+          <div className="filter__image" ref = {reference}>
+            <img src = {image.src} style={style} />
           </div>
           <button
             className="fiiter__delete"

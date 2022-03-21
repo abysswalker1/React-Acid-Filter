@@ -5,7 +5,7 @@
     max-width: 900px;
 }
 
-.filter__image-wrapper {
+.filter__wrapper {
     display: flex;
     align-items: flex-start;
     position : relative;
@@ -14,14 +14,6 @@
 
 .fiiter__delete {
     margin-left: 5px;
-}
-
-.lay {
-    position : absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    vertical-align: top;
 }
 
 img {
@@ -40,5 +32,5 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 10px;
+    margin-right: 20px;
 }
